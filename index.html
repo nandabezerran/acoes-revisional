@@ -11,47 +11,82 @@
 <div id="body">
 <!-- NavBar -->
     <header class="header">
-        <!-- Logo -->
-        <a href="#" class="logo"><img class="logo-img" src="assets/logo.png"></a>
-        <!-- Menu -->
-        <!-- <nav class="nav">
-            <ul class="menu">
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blog</a> </li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav> -->
+            <!-- Logo -->
+            <a href="#" class="logo"><img class="logo-img" src="assets/logo.png"></a>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#sobreNos">SOBRE NÓS</a> </li>
+                    <li><a href="#servicos">SERVIÇOS</a></li>
+                    <li><a href="#Perguntas">PERGUNTAS</a></li>
+                </ul>
+            </nav>
     </header>
-    <div class="wrapper">
+    <div id="sobreNos">
+        <div class="videoWrapper">
+            <video width="320" height="240" controls autoplay>
+                <source src="assets/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+    </div>
+    <div class="descricao">
+        <h3>Quem somos?</h3>
+        <p>Somos uma  equipe especializada, com mais de 10 anos de atuação, propomos Ação Revisional de Veículos para a defesa de Consumidores em relação à Instituições Bancárias, além  de defesas em Ação de Busca e Apreensão de Veículos.
+            Fundamos nossa empresa com o objetivo de ajudar, oferecemos um serviço de excelência, por meio de valores de honorários populares, acessível a todos.</p>
+    </div>
+    <div class="wrapper" id="servicos">
         <div class="box a">
             <i class="fa-solid fa-sheet-plastic"></i>
             <br>
-            <h3>Ação Revisional de Carro</h3>
+            <h3>Análise contratual</h3>
             <br>
-            <p>Revisão de contrato de financiamento de Carro. Negocie a Divida. Reduza Parcela e Juros.</p>
+            <p>Análise contratual de veículos é uma avaliação para identificar e validar cláusulas de um contrato. Essa análise tem como finalidade a redução ou eliminação de uma dívida, funciona de modo a identificar práticas abusivas de financeiras ou bancos.</p>
         </div>
         <div class="box b">
-            <i class="fa-solid fa-building-columns"></i>
+            <i class="fa-solid fa-car-rear"></i>
             <br>
-            <h3>Ação Revisional de Contrato Bancario</h3>
+            <h3>Busca e apreensão de veículos</h3>
             <br>
-            <p>Somos especialistas em Redução dos Juros. Peça Revisão de Contrato de Financiamento</p>
+            <p>A busca e apreensão de veículos ocorre quando um cliente que possui um veículo deixa de cumprir suas obrigações com relação ao pagamento das parcelas de financiamento. Sendo assim, um Juiz toma a decisão de apreender o veículo em questão, visando cumprir o que foi negociado em contrato.</p>
         </div>
         <div class="box c">
             <i class="fa-solid fa-gavel"></i>
             <br>
-            <h3>Cobrança Abusiva de Juros Financiamento</h3>
+            <h3>Juros Abusivos</h3>
             <br>
-            <p>Peça Revisional. Reduza em até 85%. Faça a revisão do contrato.</p>
-        </div>
-        <div class="box d">
-            <i class="fa-solid fa-car-rear"></i>
-            <h3>Busca e Apreensão de Veículos</h3>
-            <br>
-            <p>Parcela Alta ou Atrasada? Não entregue seu carro ao Banco. Detenha a Busca e Apreensão</p>
+            <p>Juros Abusivos é aquilo que a justiça entende como juros que se diferenciam de forma exacerbada dos juros médios cobrados pelo mercado. Para compreender melhor se os juros de um financiamento são abusivos, é necessário realizar uma análise contratual do seu financiamento.</p>
         </div>
     </div>
+    <div class="descricao" id="Perguntas">
+        <h3>Perguntas Frequentes: </h3><br>
+        <h4>&emsp; A busca e apreensão é legal?</h4>
+        <p>&emsp;&emsp;O procedimento sim. A Instituição financeira ou o banco pode requerer tal medida. Porém, para isso é necessário que cumpra alguns requisitos previstos em lei para que seja válido.</p>
+        <br>
+        <h4>&emsp;Quem tem direito?</h4>
+        <p>&emsp;&emsp;Qualquer pessoa que tenha aderido a um contrato de financiamento de veículo.</p>
+        <br>
+        <h4>&emsp;Não paguei nenhuma parcela ainda, posso requerer a revisão?</h4>
+        <p>&emsp;&emsp;Pode sim, o contrato estando assinado já será considerado apto a ser revisado.</p>
+        <br>
+        <h4>&emsp;É legal a revisão de contrato?</h4>
+        <p>&emsp;&emsp;Sim, é um direito básico do consumidor.</p>
+        <br>
+        <h4>&emsp;Quanto tempo até o banco leiloar ou vender diretamente o veículo apreendido?</h4>
+        <p>&emsp;&emsp;Após 5 dias da apreensão, caso não houver uma defesa, a propriedade resolúvel do bem, assim como a posse, passam a ser do Banco e, é nesse momento, que pode ser feita a venda ou o leilão do bem.</p>
+        <br>
+        <h4>&emsp;Meu nome vai continuar no SPC?</h4>
+        <p>&emsp;&emsp;Sim, pelo menos até a quitação total do débito.</p>
+        <br>
+        <h4>&emsp;O Banco pode ainda me cobrar mais algum valor?</h4>
+        <p>&emsp;&emsp;Sim. Caso o valor obtido pela venda do carro não seja suficiente para quitar o saldo devedor do contrato, o Banco continuará sendo seu credor e poderá converter a Ação de Busca e Apreensão em Execução para atingir outros bens. Portanto, você perderá o carro, todo o valor pago ao banco ( entrada e parcelas) e poderá continuar devendo, com seu nome inscrito no SPC até a quitação do débito.</p>
+        <br>
+    </div>
 </div>
+
 <div class="footer">
     <p>Estamos no whatsapp para lhe atender com rapidez</p>
     <a target="_blank" href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=5585997106064"><i class="fa-brands fa-whatsapp"></i> 997106064</a>
