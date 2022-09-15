@@ -21,15 +21,34 @@
                 <ul class="menu">
                     <li><a href="#sobreNos">SOBRE NÓS</a> </li>
                     <li><a href="#servicos">SERVIÇOS</a></li>
-                    <li><a href="#Perguntas">PERGUNTAS</a></li>
+                    <li><a href="#perguntas">PERGUNTAS</a></li>
                 </ul>
             </nav>
     </header>
-
-    <div class="descricao">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/image1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/image2.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/image3.png" style="width:100%">
+        </div>
+      </div>
+      <br>
+    <div class="descricao" id="sobreNos">
         <h3>Quem somos?</h3>
         <p>Somos uma  equipe especializada, com mais de 10 anos de atuação, propomos Ação Revisional de Veículos para a defesa de Consumidores em relação à Instituições Bancárias, além  de defesas em Ação de Busca e Apreensão de Veículos.
             Fundamos nossa empresa com o objetivo de ajudar, oferecemos um serviço de excelência, por meio de valores de honorários populares, acessível a todos.</p>
+    </div>
+    <div id="video">
+        <div class="videoWrapper">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/Odt6ThI9LcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
     <div class="wrapper" id="servicos">
         <div class="box a">
@@ -54,7 +73,7 @@
             <p>Juros Abusivos é aquilo que a justiça entende como juros que se diferenciam de forma exacerbada dos juros médios cobrados pelo mercado. Para compreender melhor se os juros de um financiamento são abusivos, é necessário realizar uma análise contratual do seu financiamento.</p>
         </div>
     </div>
-    <div class="descricao" id="Perguntas">
+    <div class="descricao" id="perguntas">
         <h3>Perguntas Frequentes: </h3><br>
         <h4>&emsp; A busca e apreensão é legal?</h4>
         <p>&emsp;&emsp;O procedimento sim. A Instituição financeira ou o banco pode requerer tal medida. Porém, para isso é necessário que cumpra alguns requisitos previstos em lei para que seja válido.</p>
@@ -78,11 +97,6 @@
         <p>&emsp;&emsp;Sim. Caso o valor obtido pela venda do carro não seja suficiente para quitar o saldo devedor do contrato, o Banco continuará sendo seu credor e poderá converter a Ação de Busca e Apreensão em Execução para atingir outros bens. Portanto, você perderá o carro, todo o valor pago ao banco ( entrada e parcelas) e poderá continuar devendo, com seu nome inscrito no SPC até a quitação do débito.</p>
         <br>
     </div>
-    <div id="video">
-        <div class="videoWrapper">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/Odt6ThI9LcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
 </div>
 <div class="footer">
     <p>Estamos no whatsapp para lhe atender com rapidez</p>
@@ -90,6 +104,23 @@
     <p>Tambem estamos disponiveis pelo email</p>
     <a href="mailto:guimaraesebezerra@gmail.com"><i class="fa-solid fa-envelope"></i> guimaraesebezerra@gmail.com</a>
   </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for(i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if(slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
 </body>
 
 </html>
